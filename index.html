@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Mazapán</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="estrellas"></div>
+
+<!-- LOGIN -->
+
+<div id="login">
+
+<h1>Solo Mazapán puede entrar 💙</h1>
+
+<p>Ingresa la fecha en que empezamos a hablar</p>
+
+<input type="password" id="password" placeholder="ddmmaaaa">
+
+<button onclick="checkPassword()">Entrar</button>
+
+<p id="error"></p>
+
+</div>
+
+<!-- SORPRESA -->
+
+<div id="sorpresaCumple">
+
+<h1>FOKING ABULONES</h1>
+<h2>MI AMOR</h2>
+<h1>FELIZ CUMPLE 💙</h1>
+
+</div>
+
+<!-- CONTENIDO -->
+
+<div id="contenido">
+
+<section>
+
+<h1 class="titulo">Para Mazapán</h1>
+
+<h2 class="nombres">
+
+<span class="elias">Elías 💚</span>
++
+<span class="malena">Malena 💙</span>
+
+</h2>
+
+<p>Esta página existe porque existís vos.</p>
+
+</section>
+<section>
+
+<h2>Una canción para vos</h2>
+
+<audio controls loop>
+<source src="musica/ytmp3free.cc_contigo-los-panchos-letra-youtubemp3free.org.mp3">
+</audio>
+
+</section>
+<section>
+
+<h2>Tiempo desde que empezamos a hablar</h2>
+
+<p id="contador"></p>
+
+</section>
+
+<section>
+
+<h2>Una carta para vos</h2>
+
+<div class="sobre" onclick="abrirCarta()">
+
+<div class="carta" id="carta">
+
+Mazapán,
+
+gracias por existir, no se que habria sido de 
+mi vida si no me hubieras respondido esa nota 
+
+incluso antes de ser mi novia yo siempre vi algo
+especial en ti, admiro cada parte de ti como persona 
+
+y el tenerte en mi vida es uno de los mejores regalos 
+que me pudo dar la vida, te amo miamor nunca cambies 
+
+— Elías 💚
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Cosas que me gustan de vos</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="front">Algo que me gusta</div>
+<div class="back">Tus lentes</div>
+</div>
+
+<div class="card">
+<div class="front">Algo que me gusta</div>
+<div class="back">que me veas con tu cara enojada</div>
+</div>
+
+<div class="card">
+<div class="front">Algo que me gusta</div>
+<div class="back">darte microbesitos</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Recuerdos</h2>
+
+<div class="galeria">
+
+<img src="fotos/fotosfoto1.jpg.JPG" onclick="abrirImagen(this)">
+<img src="fotos/fotosfoto2.jpg.jpeg" onclick="abrirImagen(this)">
+<img src="fotos/fotosfoto3.jpg.JPG" onclick="abrirImagen(this)">
+<img src="fotos/fotosfoto4.jpg.JPG" onclick="abrirImagen(this)">
+<img src="fotos/fotosfoto5.jpg.jpeg" onclick="abrirImagen(this)">
+<img src="fotos/fotosfoto6.jpg.JPG" onclick="abrirImagen(this)">
+<img src="fotos/fotosfoto7.jpg.JPG" onclick="abrirImagen(this)">
+<img src="fotos/fotosfoto8.jpg.JPG" onclick="abrirImagen(this)">
+<img src="fotos/fotosfoto9.jpg.JPG" onclick="abrirImagen(this)">
+<img src="fotos/foto10.jpg" onclick="abrirImagen(this)">
+
+</div>
+
+</section>
+
+<div id="visorImagen" onclick="cerrarImagen()">
+<img id="imagenGrande">
+</div>
+
+
+<section class="finalRomantico">
+
+<h2 id="mensajeRomantico"></h2>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

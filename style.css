@@ -1,0 +1,225 @@
+body{
+margin:0;
+font-family:Arial;
+background:#cfe9ff;
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+section{
+padding:80px 20px;
+text-shadow:0 0 8px rgba(255,255,255,0.7);
+}
+
+#contenido{
+display:none;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:20px;
+background:white;
+color:#4aa3ff;
+font-size:16px;
+cursor:pointer;
+}
+
+.titulo{
+font-size:50px;
+}
+
+.nombres{
+font-size:35px;
+}
+
+/* BRILLO NOMBRES */
+
+.elias{
+color:white;
+text-shadow:0 0 10px #7cff7c,0 0 20px #7cff7c,0 0 40px #7cff7c;
+}
+
+.malena{
+color:white;
+text-shadow:0 0 10px #8fd3ff,0 0 20px #8fd3ff,0 0 40px #8fd3ff;
+}
+
+/* ESTRELLAS */
+
+.estrellas{
+position:fixed;
+width:100%;
+height:100%;
+background:url("https://www.transparenttextures.com/patterns/stardust.png");
+opacity:0.4;
+z-index:-1;
+animation:brilloFondo 5s infinite alternate;
+}
+
+@keyframes brilloFondo{
+0%{filter:brightness(1)}
+100%{filter:brightness(1.3)}
+}
+
+/* SORPRESA */
+
+#sorpresaCumple{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(180deg,#6ec6ff,#4aa3ff);
+display:none;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+font-size:60px;
+z-index:2000;
+}
+
+#sorpresaCumple h1,
+#sorpresaCumple h2{
+text-shadow:0 0 15px white,0 0 30px #8fd3ff,0 0 60px #4aa3ff;
+}
+
+/* CORAZONES */
+
+.corazon{
+position:fixed;
+font-size:22px;
+animation:caer 6s linear;
+pointer-events:none;
+}
+
+@keyframes caer{
+0%{
+transform:translateY(-50px);
+opacity:1;
+}
+100%{
+transform:translateY(100vh);
+opacity:0;
+}
+}
+
+/* CARTA */
+
+.sobre{
+background:white;
+color:#4aa3ff;
+width:300px;
+margin:auto;
+padding:20px;
+border-radius:10px;
+cursor:pointer;
+transition:transform 0.4s;
+}
+
+.sobre:hover{
+transform:scale(1.05);
+}
+
+.carta{
+display:none;
+animation:aparecer 1s;
+}
+
+@keyframes aparecer{
+from{opacity:0; transform:scale(0.8)}
+to{opacity:1; transform:scale(1)}
+}
+
+/* TARJETAS */
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+width:200px;
+height:120px;
+perspective:1000px;
+position:relative;
+}
+
+.card div{
+position:absolute;
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:white;
+color:#4aa3ff;
+border-radius:10px;
+backface-visibility:hidden;
+transition:transform 0.6s;
+}
+
+.back{
+transform:rotateY(180deg);
+}
+
+.card:hover .front{
+transform:rotateY(180deg);
+}
+
+.card:hover .back{
+transform:rotateY(360deg);
+}
+
+/* GALERIA */
+
+.galeria{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.galeria img{
+width:220px;
+border-radius:15px;
+cursor:pointer;
+transition:transform 0.4s;
+}
+
+.galeria img:hover{
+transform:scale(1.1);
+}
+
+/* VISOR */
+
+#visorImagen{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+}
+
+#visorImagen img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+}
+
+video{
+max-width:90%;
+border-radius:15px;
+}
+
+.finalRomantico{
+padding:120px 20px;
+font-size:35px;
+}
